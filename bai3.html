@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let number = Number(prompt("nhat so bat ki"));
+
+function IsFibolacci(number) {
+
+    let a, i, fib1, fib2, fib;
+    fib1 = 1;
+    fib2 = 1;
+    fib = 2;
+
+    while (fib1 + fib2 <= number) {
+        fib = fib1 + fib2;
+        fib2 = fib1;
+        fib1 = fib;
+    }
+
+    if (fib == number) {
+        document.write("true");
+    } else {
+        document.write("false");
+    }
+}
+
+    IsFibolacci(number);
+
+
+</script>
+</body>
+</html>
